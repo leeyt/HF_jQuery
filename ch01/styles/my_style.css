@@ -1,14 +1,16 @@
-a:link img, 
-a:visited img {
-  display: none;
+#clickMe {
+    background: #D8B36E;
+    padding:    20px;
+    text-align: center;
+    width:      205px;
+    display:    block;
+    border:     2px solid #000;
 }
 
-a:hover img,
-a:active img {
-  display: block;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
+#picFrame {
+    background: #D8B36E;
+    padding:    20px;
+    width:      205px;
+    display:    none;
+    border:     2px solid #000;
 }
