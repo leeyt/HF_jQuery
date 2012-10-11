@@ -1,5 +1,15 @@
 $(document).ready(function() {
   $(".guess_box").click(checkForCode);
+  $(".guess_box").hover(
+    function() {
+      // mouseenter
+      $(this).addClass("my_hover");
+    },
+    function() {
+      // mouseleave
+      $(this).removeClass("my_hover");
+    }
+  );
 
   function getRandom(num) {
     var my_num = Math.floor(Math.random()*num);
