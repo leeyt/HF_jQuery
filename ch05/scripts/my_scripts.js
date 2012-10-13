@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	var headclix = 0,
-	    eyesclicx = 0,
+	    eyesclix = 0,
 	    noseclix = 0,
 	    mouthclix = 0;
 
@@ -10,32 +10,40 @@ $(document).ready(function() {
 
 	$("#head").click(function() {
 		if (headclix < 9) {
+			$(this).animate({left: "-=367px"}, 500);
 			headclix++;
 		} else {
+			$(this).animate({left: "0px"}, 500);
 			headclix = 0;
 		}
 	});
 
 	$("#eyes").click(function() {
 		if (eyesclix < 9) {
+			$(this).animate({left: "-=367px"}, 500);
 			eyesclix++;
 		} else {
+			$(this).animate({left: "0px"}, 500);
 			eyesclix = 0;
 		}
 	});
 
 	$("#nose").click(function() {
 		if (noseclix < 9) {
+			$(this).animate({left: "-=367px"}, 500);
 			noseclix++;
 		} else {
+			$(this).animate({left: "0px"}, 500);
 			noseclix = 0;
 		}
 	});
 
 	$("#mouth").click(function() {
 		if (mouthclix < 9) {
+			$(this).animate({left: "-=367px"}, 500);
 			mouthclix++;
 		} else {
+			$(this).animate({left: "0px"}, 500);	
 			mouthclix = 0;
 		}
 	});
